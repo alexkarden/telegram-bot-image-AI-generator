@@ -1,0 +1,10 @@
+services:
+  bot:
+    container_name: ${CONTAINER_NAME_BOT}
+    build: .
+    command: python run.py
+    restart: always
+    volumes:
+      - ./py_log.log:/app/py_log.log
+
+       
